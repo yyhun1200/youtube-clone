@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  width: 50%;
+  background-color: #7ed6df;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: #18486b;
+}
+.thumbnail {
+  min-width: 120px;
+  height: 66px;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+.thumbnail img {
+  transform: translate(0, -12px);
+  height: 90px;
+}
+.title {
+  overflow: hidden;
+  max-height: 60px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.channel {
+  font-weight: 400;
+  font-size: 1rem;
+}
