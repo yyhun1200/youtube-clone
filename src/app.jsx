@@ -1,7 +1,8 @@
-import "./app.css";
+import "./app.module.css";
+import Main from "./components/view/main";
 
 function App() {
-  return <h1>Hello:)</h1>;
+  return <Main />;
 }
 
 export default App;
