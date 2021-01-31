@@ -4,8 +4,12 @@ import styles from "./list.module.css";
 
 const List = (props) => (
   <div className={styles.list}>
-    <Card></Card>
-    <Card></Card>
+    <div className={styles.container}>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+    </div>
   </div>
 );
 

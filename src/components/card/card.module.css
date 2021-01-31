@@ -1,11 +1,18 @@
 .card {
   display: flex;
   align-items: center;
-  margin: 0.5rem;
-  width: 50%;
+  margin: 10px;
+  width: 46%;
   background-color: #7ed6df;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   color: #18486b;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #3f87a0;
+  transform: scale(1.02);
+  color: white;
 }
 .thumbnail {
   min-width: 120px;
@@ -24,6 +31,12 @@
   font-size: 1.5rem;
 }
 .channel {
+  padding: 2px;
   font-weight: 400;
   font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
