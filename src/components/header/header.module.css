@@ -20,6 +20,11 @@
   text-decoration: none;
   color: #18486b;
   font-weight: 600;
+  transition: 0.2s;
+}
+.logoGroup:hover {
+  transform: scale(1.02);
+  color: white;
 }
 .logoGroup img {
   width: 2rem;
@@ -44,6 +49,10 @@
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   outline: none;
+  transition: 0.1s;
+}
+.searchBar input:focus {
+  background-color: #3f87a0;
 }
 .searchBar button {
   height: 1.8rem;
