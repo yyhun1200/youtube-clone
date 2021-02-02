@@ -1,11 +1,12 @@
 .list {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 5px 10px;
+  /* height: 94vh; */
+  /* overflow: auto; */
 }
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
 }

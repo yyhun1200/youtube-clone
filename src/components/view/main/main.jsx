@@ -6,7 +6,9 @@ import List from "../../list/list";
 const Main = (props) => (
   <div className={styles.main}>
     <Header />
-    <List />
+    <div className={styles.list}>
+      <List />
+    </div>
   </div>
 );
 

@@ -3,6 +3,15 @@
   flex-direction: column;
 }
 .layout {
+  display: flex;
+  /* flex-direction: column; */
   align-self: center;
   width: 80%;
 }
+.show {
+  margin: 10px 0;
+}
+/* .list {
+  margin: 0 10px;
+  width: 100%;
+} */

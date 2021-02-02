@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  align-self: center;
+  width: 80%;
+}

@@ -12,6 +12,9 @@ const Video = (props) => (
       <div className={styles.show}>
         <Show />
       </div>
+      <div className={styles.list}>
+        <List />
+      </div>
     </section>
   </div>
 );
