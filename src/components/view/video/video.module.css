@@ -4,14 +4,22 @@
 }
 .layout {
   display: flex;
-  /* flex-direction: column; */
   align-self: center;
   width: 80%;
 }
 .show {
   margin: 10px 0;
 }
-/* .list {
-  margin: 0 10px;
-  width: 100%;
-} */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+  .show {
+    align-self: center;
+  }
+  .list {
+    margin-top: -15px;
+    align-self: center;
+    width: 590px;
+  }
+}

@@ -6,8 +6,6 @@ const Show = (props) => (
   <div className={styles.show}>
     <section className={styles.videoInfo}>
       <iframe
-        width="560"
-        height="315"
         src="https://www.youtube.com/embed/tiZhRDFkJuQ"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

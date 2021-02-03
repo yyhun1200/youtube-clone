@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./card.module.css";
 
 const Card = (props) => {
-  const [page, setPage] = useState("video");
+  const { page } = { ...props };
   const applyStyle = page === "main" ? styles.main : styles.default;
   return (
     <div className={`${styles.card} ${applyStyle}`}>

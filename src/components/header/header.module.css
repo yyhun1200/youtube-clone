@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6vh;
+  width: 100%;
+  min-height: 6vh;
+  max-height: 6vh;
+
   background-color: #7ed6df;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
@@ -57,7 +60,7 @@
 .searchBar button {
   height: 1.8rem;
   position: absolute;
-  right: 0.3rem;
+  right: 1.2rem;
   background: transparent;
   outline: none;
   border: none;
@@ -65,11 +68,12 @@
 .searchBar img {
   height: 1rem;
 }
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
   }
   .searchBar input {
-    width: 15rem;
+    width: 80%;
   }
 }
