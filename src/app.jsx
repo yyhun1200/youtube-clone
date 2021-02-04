@@ -6,10 +6,10 @@ import Video from "./components/view/video/video";
 import React, { useState } from "react";
 
 function App() {
-  const [page, setPage] = useState("main");
+  const [page, setPage] = useState("video");
   return (
     <div className={styles.app}>
-      <Main page={page} />
+      <Video page={page} />
     </div>
   );
 }
