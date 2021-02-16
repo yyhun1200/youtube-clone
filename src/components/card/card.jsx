@@ -8,8 +8,8 @@ const Card = (props) => {
   const applyStyle = page === "main" ? styles.main : styles.video;
 
   const handleClickCard = (e) => {
-    const data = { etag, videoId, snippet };
-
+    const id = typeof videoId == "object" ? videoId.videoId : videoId;
+    const data = { etag, id, snippet };
     setShowData(data);
     setPage("video");
   };

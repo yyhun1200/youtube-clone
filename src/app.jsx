@@ -14,14 +14,16 @@ function App(props) {
 
   useEffect(() => {
     const jsonItem = mostpopular.items;
-    setData(jsonItem);
-    // youtube.getMostPopular(setData);
+    // setData(jsonItem);
+    youtube.getMostPopular(setData);
   }, []);
 
   if (page === "main") {
     return (
       <Main
+        youtube={youtube}
         data={data}
+        setData={setData}
         page={page}
         setPage={setPage}
         setShowData={setShowData}
@@ -30,7 +32,9 @@ function App(props) {
   } else {
     return (
       <Video
+        youtube={youtube}
         data={data}
+        setData={setData}
         page={page}
         setPage={setPage}
         showData={showData}

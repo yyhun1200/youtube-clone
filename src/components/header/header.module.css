@@ -53,6 +53,7 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   outline: none;
   transition: 0.1s;
+  color: #fff;
 }
 .searchBar input:focus {
   background-color: #3f87a0;
@@ -67,6 +68,7 @@
 }
 .searchBar img {
   height: 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

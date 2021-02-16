@@ -4,10 +4,11 @@ import styles from "./show.module.css";
 
 const Show = (props) => {
   const { showData } = { ...props };
-  const { snippet, videoId } = { ...showData };
+  const { snippet, id } = { ...showData };
+
   const { title, channelTitle, description } = { ...snippet };
 
-  const videoURL = "https://www.youtube.com/embed/" + videoId;
+  const videoURL = "https://www.youtube.com/embed/" + id;
 
   const handleOnClick = (e) => {
     e.preventDefault();

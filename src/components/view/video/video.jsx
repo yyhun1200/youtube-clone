@@ -5,10 +5,12 @@ import Show from "../../show/show";
 import styles from "./video.module.css";
 
 const Video = (props) => {
-  const { data, page, setPage, showData, setShowData } = { ...props };
+  const { youtube, data, setData, page, setPage, showData, setShowData } = {
+    ...props,
+  };
   return (
     <div className={styles.video}>
-      <Header setPage={setPage} />
+      <Header youtube={youtube} setData={setData} setPage={setPage} />
       <section className={styles.layout}>
         <div className={styles.show}>
           <Show showData={showData} />
