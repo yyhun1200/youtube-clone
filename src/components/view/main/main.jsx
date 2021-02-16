@@ -4,12 +4,18 @@ import Header from "../../header/header";
 import List from "../../list/list";
 
 const Main = (props) => {
-  const { page } = { ...props };
+  const { data, page, setPage, setShowData } = { ...props };
+
   return (
     <div className={styles.main}>
-      <Header />
+      <Header setPage={setPage} />
       <div className={styles.list}>
-        <List page={page} />
+        <List
+          data={data}
+          page={page}
+          setPage={setPage}
+          setShowData={setShowData}
+        />
       </div>
     </div>
   );

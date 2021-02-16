@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 .env
+mostpopular.json
+search.json
 
 # testing
 /coverage

@@ -2,19 +2,26 @@ import React from "react";
 import styles from "./card.module.css";
 
 const Card = (props) => {
-  const { page } = { ...props };
-  const applyStyle = page === "main" ? styles.main : styles.default;
+  const { page, etag, videoId, snippet, setPage, setShowData } = { ...props };
+  const { title, thumbnails, channelTitle } = { ...snippet };
+  const thumbnailSrc = thumbnails.default.url;
+  const applyStyle = page === "main" ? styles.main : styles.video;
+
+  const handleClickCard = (e) => {
+    const data = { etag, videoId, snippet };
+
+    setShowData(data);
+    setPage("video");
+  };
+
   return (
-    <div className={`${styles.card} ${applyStyle}`}>
+    <div className={`${styles.card} ${applyStyle}`} onClick={handleClickCard}>
       <div className={styles.thumbnail}>
-        <img
-          src="https://i.ytimg.com/vi/ald6Ma0vEW4/default.jpg"
-          alt="thumbnail"
-        />
+        <img src={thumbnailSrc} alt="thumbnail" />
       </div>
       <div className={styles.info}>
-        <div className={styles.title}>스타트업 OST (START-UP OST )</div>
-        <div className={styles.channel}>Yoona YNA</div>
+        <div className={styles.title}>{title.toString()}</div>
+        <div className={styles.channel}>{channelTitle}</div>
       </div>
     </div>
   );
